@@ -18,7 +18,7 @@ img {
   vertical-align: middle;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--black-color);
 }
 ul {
@@ -38,7 +38,7 @@ h1 {
   padding: 94px 0px 94px 0px;
 }
 .section-what {
-  padding-top:0px;
+  padding-top: 0px;
 }
 .container {
   width: 1200px;
@@ -99,6 +99,7 @@ h1 {
 .svg-nav {
   margin-right: 10px;
   fill: var(--grey-color);
+  vertical-align: middle;
 }
 .link-start:hover svg {
   fill: var(--brand-color);
@@ -198,10 +199,13 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 110px 0px;
+  padding: 106px 0px;
 }
 .solutions-bg {
   background-color: var(--background-color);
+  background-image: url(/images/header_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .solutions button {
   background-color: var(--brand-color);
@@ -216,8 +220,6 @@ h1 {
   border: 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
   text-align: center;
   margin: 15px 0px 0px 0px;
 }
@@ -242,6 +244,11 @@ h1 {
   padding: 25px 15px 0px 15px;
   gap: 30px;
 }
+
+
+/* LOREM */
+
+
 .lorem-showcase {
   display: flex;
   justify-content: center;
@@ -264,6 +271,9 @@ h1 {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+}
+.lorem-icon {
+  margin-bottom: 30px;
 }
 .team {
   display: flex;
