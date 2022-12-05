@@ -1,6 +1,7 @@
 :root {
   --brand-color: #2196f3;
   --background-color: #2f303a;
+  --background-img-color: rgb(47, 48, 58);
   --logo-footer-color: #ffffff;
   --black-color: #000;
   --grey-color: #757575;
@@ -203,7 +204,12 @@ h1 {
 }
 .solutions-bg {
   background-color: var(--background-color);
-  background-image: url(/images/header_background.jpg);
+  background: linear-gradient(
+      to bottom,
+      rgba(var(--background-img-color), 0.4),
+      rgba(var(--background-img-color), 0.4)
+    ),
+    url(/images/header_background.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -245,9 +251,7 @@ h1 {
   gap: 30px;
 }
 
-
 /* LOREM */
-
 
 .lorem-showcase {
   display: flex;
