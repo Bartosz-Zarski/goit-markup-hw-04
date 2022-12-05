@@ -206,8 +206,8 @@ h1 {
   background-color: var(--background-color);
   background-image: linear-gradient(
       to right,
-      (var(--background-img-color), 0.4),
-      (var(--background-img-color), 0.4)
+      rgba(var(--background-img-color), 0.4),
+      rgba(var(--background-img-color), 0.4)
     ),
     url(../images/header_background.jpg);
   background-repeat: no-repeat;
