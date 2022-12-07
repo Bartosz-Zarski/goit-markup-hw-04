@@ -8,6 +8,8 @@
   --border-header-color: #ececec;
   --team-bg-color: #f5f4fa;
   --slides-background-color: #eeeeee;
+  --white-color: #ffffff;
+  --icon-color: #AFB1B8;
 }
 *,
 *::before,
@@ -203,7 +205,6 @@ h1 {
   padding: 106px 0px;
 }
 .solutions-bg {
-  background-color: var(--background-color);
   background-image: linear-gradient(
       to right,
       rgba(var(--background-img-color), 0.4),
@@ -212,6 +213,8 @@ h1 {
     url(../images/header_background.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  width: 1600px;
+  margin: 0 auto;
 }
 .solutions button {
   background-color: var(--brand-color);
@@ -329,6 +332,15 @@ h1 {
   letter-spacing: 0.03em;
   padding-top: 5px;
   padding-bottom: 30px;
+}
+.team_icons {
+fill: var(--icon-color);
+}
+.team_icons:hover {
+  background-color: #2196f3;
+  fill: white;
+  border-radius: 50%;
+
 }
 .offer-portfolio {
   display: flex;
