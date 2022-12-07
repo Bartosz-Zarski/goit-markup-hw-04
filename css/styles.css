@@ -339,15 +339,16 @@ h1 {
   margin-top: 8px;
   margin-bottom: 30px;
 }
-.team_icon {
+.social_icon {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px;
   border-radius: 50%;
+  color:white;
 }
 .social_icon:hover svg {
-  fill: #fff;
+  color: white;
   background-color: var(--brand-color);
 }
 .offer-portfolio {
