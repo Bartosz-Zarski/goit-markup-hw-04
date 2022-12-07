@@ -64,6 +64,9 @@ h1 {
 .container-portfolio {
   margin: 0 auto;
 }
+.container-customers {
+  margin: 0 auto;
+}
 .logo .container {
   display: flex;
   align-items: center;
@@ -104,7 +107,9 @@ h1 {
   fill: var(--grey-color);
   vertical-align: middle;
 }
-.link-start:hover svg {
+.link-start:hover svg,
+.link-start:focus svg,
+.link-start:active svg {
   fill: var(--brand-color);
 }
 
@@ -130,7 +135,8 @@ h1 {
   line-height: 1.625;
 }
 .offer-nav button:hover,
-.offer-nav button:focus {
+.offer-nav button:focus,
+.offer-nav button:active {
   background-color: var(--brand-color);
   color: var(--logo-footer-color);
   cursor: pointer;
@@ -174,7 +180,8 @@ h1 {
   letter-spacing: 0.03em;
 }
 .link:hover,
-.link:focus {
+.link:focus,
+.link:active {
   color: var(--brand-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -187,7 +194,8 @@ h1 {
   letter-spacing: 0.02em;
 }
 .link-start:hover,
-.link-start:focus {
+.link-start:focus,
+.link-start:active {
   color: var(--brand-color);
 }
 .link-footer {
@@ -195,7 +203,8 @@ h1 {
   text-decoration: none;
 }
 .link-footer:hover,
-.link-footer:focus {
+.link-footer:focus,
+.link-footer:active {
   color: var(--brand-color);
 }
 .solutions {
@@ -232,7 +241,9 @@ h1 {
   text-align: center;
   margin: 15px 0px 0px 0px;
 }
-.solutions button:hover {
+.solutions button:hover,
+.solutions button:focus,
+.solutions button:active {
   cursor: pointer;
 }
 .offer-main {
@@ -339,6 +350,9 @@ h1 {
   margin-top: 8px;
   margin-bottom: 30px;
 }
+
+/* SOCIAL ICONS */
+
 .social_icon {
   display: flex;
   align-items: center;
@@ -346,9 +360,16 @@ h1 {
   padding: 12px;
   border-radius: 50%;
 }
-.social_icon:hover svg {
-  color: white;
+.social_icon:hover,
+.social_icon:focus,
+.social_icon:active {
   background-color: var(--brand-color);
+  cursor: pointer;
+}
+.social_icon:hover svg,
+.social_icon:focus svg, 
+.social_icon:active svg {
+  --color1: var(--white-color);
 }
 .offer-portfolio {
   display: flex;
@@ -420,4 +441,46 @@ h1 {
   line-height: 1.173;
   letter-spacing: 0.03em;
   font-family: Raleway;
+}
+
+/* Customers */
+
+.container-customers h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 25px;
+}
+.customers-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 25px;
+}
+.customers-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+  fill: var(--icon-color);
+  color: var(--icon-color);
+  border: 1px solid;
+  border-radius: 4%;
+}
+.customers-icons:hover .customer-icon,
+.customers-icons:focus .customer-icon,
+.customers-icons:active .customer-icon {
+  fill: var(--brand-color);
+  border-color: var(--brand-color);
+  color: red;
 }
