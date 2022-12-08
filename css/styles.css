@@ -349,6 +349,7 @@ h1 {
   gap: 10px;
   margin-top: 8px;
   margin-bottom: 30px;
+  vertical-align: middle;
 }
 
 /* SOCIAL ICONS */
@@ -367,7 +368,7 @@ h1 {
   cursor: pointer;
 }
 .social_icon:hover svg,
-.social_icon:focus svg, 
+.social_icon:focus svg,
 .social_icon:active svg {
   --color1: var(--white-color);
 }
@@ -378,6 +379,9 @@ h1 {
   row-gap: 30px;
   column-gap: 30px;
 }
+
+/* Portfolio Boxes */
+
 .box-portfolio {
   width: 370px;
 }
@@ -400,27 +404,35 @@ h1 {
   letter-spacing: 0.03em;
   padding: 2px 0px 20px 24px;
 }
+.box-portfolio:hover,
+.box-portfolio:focus,
+.box-portfolio:active {
+  transition: box-shadow 0.3s;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .contact {
   background-color: var(--background-color);
 }
 .contact address {
-  padding: 10px 0px 60px 0px;
+  padding: 20px 0px 60px 0px;
 }
-.contact li {
+.contact .address-rows {
   color: var(--logo-footer-color);
   font-style: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.714;
 }
-.contact li:nth-child(1) {
+.contact .address-rows:nth-child(1) {
   padding-bottom: 4.5px;
 }
-.contact li:nth-child(2) {
+.contact .address-rows:nth-child(2) {
   padding-top: 4.5px;
   padding-bottom: 4.5px;
 }
-.contact li:nth-child(3) {
+.contact .address-rows:nth-child(3) {
   padding-top: 4.5px;
 }
 .contact .link {
@@ -430,9 +442,10 @@ h1 {
   line-height: 1.173;
   font-family: Raleway;
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
-  padding-top: 60px;
   width: 143px;
+}
+.footer-contact {
+  padding-top: 60px;
 }
 .contact span {
   color: var(--logo-footer-color);
@@ -483,4 +496,43 @@ h1 {
   fill: var(--brand-color);
   border-color: var(--brand-color);
   color: red;
+}
+
+/* Footer icons */
+
+.footer-icons h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-top: 72px;
+}
+.footer-icons {
+  margin-left: 70px;
+}
+.footer-boxes {
+  display: flex;
+  flex-direction: row;
+}
+.footer_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer_icon:hover,
+.footer_icon:focus,
+.footer_icon:active {
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+.footer_icon:hover svg,
+.footer_icon:focus svg,
+.footer_icon:active svg {
+  --color1: var(--white-color);
 }

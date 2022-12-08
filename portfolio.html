@@ -20,18 +20,34 @@
   <body>
     <!--Header-->
       <header id="header" class="logo-portfolio">
-    <div class="container container-top">
-        <a class="link-logo" href="#"><span class="logo-header-begin">Web</span>Studio</a>
+      <div class="container container-top">
+        <a class="link-logo" href="#"
+          ><span class="logo-header-begin">Web</span>Studio</a
+        >
         <nav class="nav-list">
           <ul>
-            <li><a class="link" href="index.html">Agencja</a></li>
-            <li><a class="link" href="#main">Portfolio</a></li>
+            <li><a class="link" href="#header">Agencja</a></li>
+            <li><a class="link" href="portfolio.html">Portfolio</a></li>
             <li><a class="link" href="#footer">Kontakt</a></li>
           </ul>
         </nav>
         <ul class="header-contact">
-          <li><a class="link-start" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link-start" href="tel:+48-111-111-111">+48 111 111 111</a></li>
+          <li>
+            <a class="link-start" href="mailto:info@devstudio.com"
+              ><svg class="svg-nav" width="16" height="12" viewBox="0 0 16 12">
+                <use href="images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link-start" href="tel:+48-111-111-111"
+              ><svg class="svg-nav" width="10" height="16" viewBox="0 0 10 16">
+                <use href="images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
         </ul>
         </div>
       </header>
@@ -173,18 +189,59 @@
     </main>
     <!--Footer-->
 
-  <footer id="footer" class="contact">
-      <div class="container container-footer">
+    <footer id="footer" class="contact">
+      <div class="container container-footer footer-boxes">
+        <div class="footer-contact">
           <a class="link" href="#">Web<span>Studio</span></a>
           <address>
             <ul>
-              <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li>
-                <a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address-rows">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="address-rows">
+                <a class="link-footer" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li><a class="link-footer" href="tel:+48-111-111-111">+48 111 111 111</a></li>
+              <li class="address-rows">
+                <a class="link-footer" href="tel:+48-111-111-111"
+                  >+48 111 111 111</a
+                >
+              </li>
             </ul>
           </address>
+        </div>
+        <div class="footer-icons">
+          <h3>DOŁĄCZ DO NAS</h3>
+          <ul class="team_icons">
+            <li class="team_icon">
+              <a class="footer_icon">
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team_icon">
+              <a class="footer_icon">
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team_icon">
+              <a class="footer_icon">
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team_icon">
+              <a class="footer_icon">
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
